@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สื่อการสอนภาษามือไทย</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>สื่อการสอนภาษามือไทย</h1>
+  </header>
+
+  <nav class="nav">
+    <button data-section="letters">หมวดตัวอักษร</button>
+    <button data-section="numbers">หมวดตัวเลข</button>
+    <button data-section="daily">หมวดประจำวัน</button>
+    <button data-section="quiz">แบบฝึกหัด</button>
+  </nav>
+
+  <main class="container">
+    <!-- หมวดตัวอักษร -->
+    <section id="letters" class="content-section">
+      <h2>ตารางพยัญชนะ (คลิกเพื่อดูภาพเต็มจอ)</h2>
+      <div class="grid" id="letterList"></div>
+    </section>
+
+    <!-- หมวดตัวเลข -->
+    <section id="numbers" class="content-section hidden">
+      <h2>หมวดตัวเลข</h2>
+      <div class="grid" id="numberList"></div>
+    </section>
+
+    <!-- หมวดประจำวัน -->
+    <section id="daily" class="content-section hidden">
+      <h2>หมวดประจำวัน</h2>
+      <div class="grid" id="dayList"></div>
+    </section>
+
+    <!-- แบบฝึกหัด -->
+    <section id="quiz" class="content-section hidden">
+      <h2>แบบฝึกหัด</h2>
+      <p id="questionText"></p>
+      <div id="options"></div>
+      <p id="latestScore"></p>
+      <ul id="scoreList"></ul>
+    </section>
+
+    <!-- Modal แสดงภาพเต็มจอ -->
+    <div id="modal">
+      <img id="modalImg" src="" alt="ภาพภาษามือ">
+    </div>
+
+  </main>
+
+  <footer>
+    <p>จัดทำโดย รุ้ง 🌈</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
